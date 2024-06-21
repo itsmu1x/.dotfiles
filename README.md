@@ -24,6 +24,18 @@ or install it using this command
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 ```
 
+# Font
+
+i'm using `Hurmit` font for the terminal
+and `CaskaydiaCove` font for vscodium
+you can install them from [Nerd Font](https://www.nerdfonts.com/font-downloads) or if you using [arch](https://archlinux.org/groups/x86_64/nerd-fonts/) choose whatever you want.
+
+if you are lazy (like me) install them using this command
+
+```
+sudo pacman -S otf-hermit-nerd ttf-cascadia-code-nerd
+```
+
 # VSCodium Extensions
 
 ![Codium-Screenshot](./screenshots/code.png)
