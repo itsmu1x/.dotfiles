@@ -17,6 +17,13 @@
 -   [zoxide](https://github.com/ajeetdsouza/zoxide) `sudo pacman -S zoxide`
 -   [fzf](https://github.com/junegunn/fzf) `sudo pacman -S fzf`
 
+in `.zshrc` file, you should install [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+or install it using this command
+
+```
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+```
+
 # VSCodium Extensions
 
 ![Codium-Screenshot](./screenshots/code.png)
