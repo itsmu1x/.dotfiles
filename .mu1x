@@ -1,0 +1,40 @@
+# I'm using VSCodium instead of VSCode
+alias code='codium'
+alias ar='php artisan'
+
+alias desk='cd ~/Desktop'
+alias c='clear'
+alias ..='cd ..'
+alias ...='cd ../..'
+
+alias ls='colorls -1 -A'
+alias d='ls -d'
+alias f='ls -f'
+
+alias spm='sudo npm'
+alias nr='npm run'
+alias nrs='nr start'
+alias nrd='nr dev'
+alias nrp='nr production'
+alias nrb='nr build'
+
+alias g='git'
+alias ga='g add'
+alias gc='g commit'
+alias gp='g push'
+alias clone='gh repo clone' # Using gh-cli
+push() {
+    if [ -z $1 ]; then
+        echo "\033[1;33mSpecify an message please.\033[0m"
+    else
+        git add . && git commit -m "$1" && git push
+    fi
+}
+
+cddir() {
+  if [ -z $1 ]; then
+    echo "\033[1;33mUsage: cddir <directory>\033[0m"
+  else
+    mkdir $1 && cd $1
+  fi
+}
