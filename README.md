@@ -19,6 +19,8 @@
 
 # VSCodium Extensions
 
+![Codium-Screenshot](./screenshots/code.png)
+
 -   [Bearded Theme](https://marketplace.visualstudio.com/items?itemName=BeardedBear.beardedtheme)
 -   [Bearded Icons](https://marketplace.visualstudio.com/items?itemName=BeardedBear.beardedicons)
 
