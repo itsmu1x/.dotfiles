@@ -5,7 +5,7 @@ font pango:scientifica 8
 exec --no-startup-id dex --autostart --environment i3
 exec_always --no-startup-id picom
 exec --no-startup-id "setxkbmap -layout us,ara -option 'grp:win_space_toggle'"
-exec_always --no-startup-id feh --bg-fill ~/.config/i3/background.jpg
+exec_always --no-startup-id feh --bg-fill ~/.config/i3/background-angel.jpg
 exec_always --no-startup-id exec ~/.config/polybar/launch.sh
 
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
