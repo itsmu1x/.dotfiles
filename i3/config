@@ -4,8 +4,9 @@ font pango:scientifica 8
 
 exec --no-startup-id dex --autostart --environment i3
 exec_always --no-startup-id picom
-exec --no-startup-id "setxkbmap -layout us,ara -option 'grp:win_space_toggle'"
-exec_always --no-startup-id feh --bg-fill ~/.config/i3/background-angel.jpg
+# exec --no-startup-id "setxkbmap -layout us,ara -option 'grp:win_space_toggle'"
+# optional i use the 'windows + space' to change the keyboard layout
+exec_always --no-startup-id feh --bg-fill ~/.config/i3/current.jpg
 exec_always --no-startup-id exec ~/.config/polybar/launch.sh
 
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
@@ -163,9 +164,11 @@ client.focused		#121212 #121212 #e0e0e0 #121212
 client.focused_inactive #000000 #000000 #e0e0e0 #000000
 #client.background	#1C2427
 
-# Assign windows to specific workspaces
+# Assign windows to specific workspaces, you can remove this tho.
 assign [class="Codium"] $ws10
+assign [class="Codium" instance="floating"] $ws10
+for_window [class="Codium" instance="floating"] floating toggle resize set 1500 1000, move position 100 200
 assign [class="Brave"] $ws2
 assign [class="Alacritty"] $ws3
-assign [class="Brawlhalla"] $ws9
-assign [class="Steam"] $ws8
+assign [class="steam"] $ws7
+assign [class="obs"] $ws9
